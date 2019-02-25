@@ -1,0 +1,379 @@
+@require './mixins.styl'
+@require './colors.styl'
+
+.form-register-content
+	flex-column()
+	background-color: gray_bg_card
+	padding: 2em 4em
+	box-shadow: 0px 0px 2px 2px inset green_button
+	figure
+		width: 100%
+		center-win()
+		img
+			width: 70%
+	form
+		width: 100%
+		.custom-checks.register
+			margin-top: 1em
+			a
+				margin: 0 5px
+				text-decoration: none 
+				color: green_button
+		.next-button
+			background-color: green_button !important
+			color: white
+			width: 160px
+			height: 40px
+			margin-top: 2em
+		&.step-2
+			.message
+				margin: 2em 0
+			.buttons
+				flex-between-center()
+			.new-code
+				height: 40px
+				margin-top: 2em
+		&.step-3
+			p
+				&:first-child
+					font-size: 1.5em
+					color: green_button
+			.buttons
+				flex-between-center()
+			.new-code
+				height: 40px
+				margin-top: 2em			
+
+.login-container
+	center-win()
+	background-image: url('../img/bg-login.jpg')
+	background-repeat: no-repeat
+	background-size: 100%
+	height: 100vh
+	width: 100%
+	.login-form
+		padding: 30px 20px
+		background-color: gray_bg_card
+		color: white
+		border: 1px solid green_button
+		border-radius: 10px;
+		.v-input__slot
+			margin-bottom: 0.5em
+			&:before, &:after
+				color: transparent
+				display: none
+			.v-label
+				padding-left: 5px
+			.v-label--active
+				top: 2px
+				color: white
+			input
+				border: 1px solid green_button
+				max-height: inherit
+				color: white
+		.login-header
+			color: green_button
+			text-align: center
+			img
+				width: 50%
+		.login-button
+			flex-end()
+			button, a
+				background-color: green_button !important
+				color: white
+		.forgot-message
+			font-size: 10px
+			color: green_button
+			margin-bottom: 10px
+	.login-message
+		flex-between-center()
+		padding: 0 20px;
+		color: green_button;
+		font-size: 12px;		
+		
+.mobile-menu
+	ul
+		list-style: none
+		line-height: 35px
+		li
+			color: landing_text1
+			font-weight: bold
+			cursor: pointer
+			&:hover
+				color: green_text
+.landing
+	&:not(.about)
+		padding: 2em 3em
+	header
+		flex-between-center()
+		nav
+			ul
+				list-style: none
+				display: flex
+				padding: 0
+				li
+					&:not(:first-child)
+						margin-left: 2.2em
+					a
+						color: landing_text1
+						font-weight: bold
+						cursor: pointer
+						font-size: 1.1em
+						text-decoration: none
+						&:hover
+							color: green_button
+	.actions
+		.register-button
+			background-color: green_button !important
+			color: white
+			border-top-left-radius: 6px
+			border-top-right-radius: 0
+			border-bottom-left-radius: 0
+			border-bottom-right-radius: 6px
+			text-shadow: 0px 0px 5px green_button
+			box-shadow: 0px 1px 13px 2px green_button
+.solution-information-container
+	background-color: gray_body
+	.solution-information
+		padding: 6em 0
+		background-color: #222529
+		background-image: url('../img/BG.png')
+		background-size: 100% 76%
+		background-position-x: right
+		.information-item-container
+			margin: 3em 0
+			.information-item
+				display: flex
+				justify-content: center
+				align-items: center
+				&-content
+					width: 75%
+				&-text
+					font-size: 1.5em
+				.title-section-get
+					font-size: 1.8em
+					color: green_button 
+					font-weight: bold
+				.title-sub-section
+					color: #9B9B9B
+					font-size: 2.2em
+					margin-bottom: 1em
+					p
+						color: white
+						font-weight: bold
+				.information-image-container
+					text-align: center
+					img
+						width: 25em
+.landing-step-1
+	background-image: url('../img/landing/bg.png')
+	background-color: gray_body
+	.solution-title
+		color: green_button
+		font-size: 2.3em
+		display: flex
+		flex-direction: column
+		text-align: center
+		font-weight: bold	
+	.landing-step-1-container
+		min-height: 80vh
+		background-image: url('../img/landing/world_loans_connect.png')
+		background-size: 42em
+		background-position-x: right
+		background-position-y: bottom
+		background-size: contain
+		color: white
+		.first-line
+			margin-top: 3em
+			font-size: 2.2em
+			width: 15em
+		.second-line
+			font-size: 1.5em
+			width: 16em
+			margin: 1em 0
+	.third-line
+		center-win()
+		color: white
+		font-size: 1.1em
+		font-weight: bold
+	.platforms-list
+		center-win()
+		margin-bottom: 2em
+		.platforms-list-content
+			center-win()
+			border-bottom: 1px solid landing_text1
+			figure
+				width: 11em
+				&:not(:first-child)
+					margin-left: 2em
+				img
+					width: 100%
+.landing-step-2
+	background-image: url('../img/Cloud.png')
+	background-color: gray_bg_card
+	background-position-x: right
+	background-position-y: 80%
+	background-size: 32em
+	color: landing_text_opaicty
+	min-height: 100vh
+	.first-line
+		width: 26em
+		font-size: 1.3em
+	.logo-container
+		figure
+			width: 20em
+			img
+				width: 100%
+	.info-item
+		margin-top: 1em
+		width: 75%
+		.info-item-title
+			color: green_chart
+			font-size: 1.1em
+		p
+			margin-top: 1em
+		figure
+			margin-bottom: 1em
+.landing-step-3
+	background-repeat: no-repeat
+	min-height: 100vh
+	color: white
+	display: flex
+	flex-direction: column
+	&.step-parallax
+		position: absolute
+		top: 0
+	.landing-step-3-container
+		flex-center()
+		.first-line
+			font-size: 1.8em
+			width: 20em
+			margin-bottom: 1em
+			font-weight: bold
+		.second-line
+			width: 27em
+			font-size: 1.2em			
+			margin-bottom: 3em
+			color: landing_text1
+.landing-step-4
+	background-image: url('../img/IsometricIcon.png')
+	background-position-x: 77%
+	background-position-y: 50%
+	background-size: 30em
+	background-color: gray_bg_card
+	color: white
+	min-height: 100vh
+	.info-item-list
+		margin-top: 6em
+	&-title
+		font-size: 2.2em
+		position: relative
+	.item-info
+		text-align: center
+		figure
+			margin-bottom: 1.5em
+		.item-info-title
+			font-size: 1.2em
+			font-weight: bold
+		p
+			margin-top: 1.5em
+
+footer
+	background: gray_body
+	color: landing_text1
+	.footer-content
+		border: 1px solid
+		border-bottom: 0px
+		padding: 20px 5px
+	ul
+		list-style: none
+		padding: 0
+		&.opacity-list
+			color: landing_text_opaicty
+		li
+			margin-bottom: 10px
+			&:first-child
+				text-transform: uppercase
+				font-weight: bold
+	.footer-message
+		figure
+			width: 150px
+			img
+				width: 100%
+	.footer-rigths
+		border: 1px solid
+		padding: 10px
+
+.button-open-account
+	background-color: transparent !important
+	width: 210px
+	border: 1px solid
+	border-radius: 5px
+	box-shadow: 0px 0px 6px 2px green_button, 0px 0px 3px 2px green_button inset !important
+	color: green_button !important
+	height: auto
+	padding: 12px 0
+
+.contact-account-container
+	margin-top: 35px;
+	.request-container
+		margin-top: 45px;
+	.form-container
+		flex-column()
+		.v-label
+			font-size: 14px
+		p
+			font-weight: bold;
+			width: 60%
+			text-align: center
+			font-size: 14px;
+		.request
+			width: 70%
+		.section-title
+			font-weight: bold;
+			font-size: 1.5em
+			margin-bottom: 16px;
+		.form-contact
+			width: 60%
+		.form-button
+			center-win()
+			button, a
+				background-color: green_button !important
+				color: white
+	.form-image
+		img
+			position: absolute
+			width: 30em
+			right: 10%
+			top: 16em
+.static-section
+	margin-top: 2em
+	font-weight: bold
+	.title-section
+		font-size: 3em
+		margin-bottom: 0.5em
+	.team-item
+		flex-column()
+		.team-name
+			color: green_button
+			margin-bottom: 1em
+			font-size: 1.1em
+			font-weight: bold
+		.team-img
+			width: 75%
+			height: 80%
+			border: 1px solid green_button
+			img
+				width: 100%
+				height: 100%
+		.team-position
+			margin-top: 1em
+			font-size: 1.1em
+			font-weight: bold
+.image-container
+	height: 100vh
+	overflow: hidden
+	img
+		width: 100%
+
+@require './media_query_landing.styl'

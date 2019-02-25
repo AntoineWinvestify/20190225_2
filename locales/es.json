@@ -1,0 +1,17 @@
+{
+	"statics": {
+		"header": {
+			"home": "Inicio",
+			"solutions": "Solucion",
+			"platforms": "Plataformas",
+			"about": "Nosotros",
+			"contact": "Contactanos",
+			"login": "Iniciar sesion",
+			"register": "Registro"
+		}
+	},
+	"title": "Bienvenido a Winvestify",
+	"dashboard": {
+		"title": "Visión general"
+	}
+}
